@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+.modal {
+    height: 280px;
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 24%;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 75px;
+    font-size: 100px;
+    display: none;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    animation-name: animationdrop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-iteration-count: inheritz;
+
+}
+
+@keyframes animationdrop {
+    0% {
+        transform: translate(0px, -350px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+
+    }
+}
+
+
+.open_btn {
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    transition: 1s;
+    background-color: green;
+    
+
+}
+
+.close_btn {
+    display: none;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 90%;
+    color: red;
+    transition: 1s;
+    background-color: hwb(0 35% 65% / 0.576);
+    
+
+}
+
+.close_btn:hover {
+    background-color: red;
+    transition: 0.2s;
+    color: black;
+}
